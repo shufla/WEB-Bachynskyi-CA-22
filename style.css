@@ -1,0 +1,743 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  background: #A5812F;
+  padding: 0 10px 0 0; 
+  box-sizing: border-box;
+}
+
+.header img {
+  height:50px;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.burger-menu span {
+  width: 100%;
+  height: 1.5px;
+  background-color: #EFE5C8;
+  border-radius: 7px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.nav-button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 13px;
+  margin: 0 15px;
+  align-items: center;
+  font-weight: lighter;
+}
+
+.nav-button-large {
+  background: transparent;
+  border: none;
+  color: white;
+  margin: 0 15px;
+  font-size: 13px;
+  min-width: 121px;
+  align-items: center;
+  font-weight: lighter;
+}
+
+.spec{
+  background-color: #DBBD76;
+  border: none;
+  color: black;
+  border-radius: 12px;
+  min-width: 150px;
+  padding: 10px 23px;
+  margin-right: 3px; 
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+}
+
+.hero-container img {
+  width: 100%;
+  display: block;
+}
+
+.hero-container h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center; 
+    margin: 0;
+    width: 100%;
+}
+
+.hero-container h2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center; 
+    margin: 0;
+    width: 100%;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.descr {
+    text-align: center;
+}
+
+.descr h1 {
+  font-weight: 450;
+  padding: 50px 0 30px 0;
+}
+
+.car-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0 50px 0;
+}
+
+.car-card {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.car-card1 {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.car-card:hover {
+  text-align: center;
+  padding: 0 10px;
+  background: #A5812F;
+  border-radius: 12px;
+}
+
+.car-card1:hover {
+  text-align: center;
+  padding: 0 10px;
+  background: #A5812F;
+  border-radius: 12px;
+}
+
+.car-card1 video {
+  width: 380px;
+  object-fit: cover;
+}
+
+.car-card img{
+  width: 380px;
+  object-fit: cover;
+}
+
+.car-card p {
+    color: #333;
+    margin: 10px 0;
+}
+
+.why-us {
+  padding: 50px;
+  width: 100%;
+  background: #A5812F;
+  box-sizing: border-box;
+}
+
+.why-us h1 {
+  padding: 0 0 30px 0;
+  text-align: center;
+  color: white;
+  font-weight: 450;
+}
+
+.why-us p {
+  margin: 50px 20px 0 20px;
+  text-align: center;
+  color: white;
+}
+
+.why-us1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 100px;
+}
+.why-us1 > img {
+    width: auto;
+    height: 700px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.info-block p {
+  margin-left: auto;
+  color: white;
+  line-height: 1.7;
+}
+
+.img-lafet {
+    margin-left: auto;
+    width: 700px;
+    height: auto;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.sell {
+  padding: 50px 50px 50px 50px;
+}
+
+.sell > h1 {
+  text-align: center;
+  font-weight: 450;
+}
+
+.sell > p {
+  text-align: center;
+  max-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sell-card > img {
+  width: auto;
+  height: 280px;
+  display: flex;
+}
+
+.sell-card {
+  display: flex;
+  gap: 10px;
+}
+
+.sell-card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+}
+
+.car-card-counter {
+  display: flex;
+  gap: 30px;
+}
+
+.counter-style {
+  border-radius: 12px;
+  background: #A5812F;
+  width:80px;
+  color: white;
+}
+
+.sell-button {
+  border: none;
+  background: #A5812F;
+  border-radius: 12px;
+  color: white;
+  width: 100%;
+  padding: 15px 40px;
+}
+
+.sell-card-text {
+  gap: 0;
+}
+
+.shipping {
+  background: #A5812F;
+  width: 100%;
+  padding: 50px 50px;
+  box-sizing: border-box;
+}
+
+.shippint-top-text{
+  text-align: center;
+  color: white;
+  font-weight: 450;
+  margin: 0 0 30px 0;
+}
+
+.shippint-bottom-text{
+  text-align: center;
+  color: white;
+  font-weight: 450;
+  margin: 30px 0;
+}
+
+.shipping-border {
+  margin: 0 auto;
+  margin-bottom: auto;
+  background: black;
+  width: 70%;
+  height: 3px;
+}
+
+.shipping-block1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.shipping-block1 img {
+  margin-left: auto;
+  height: 400px;
+  width: auto;
+}
+
+.shipping-counter {
+  min-width: 300px;
+  background: white;
+  width: 40%;
+  height: 50%;
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 20px;
+}
+
+.shipping-counter h2 {
+  font-weight: 450;
+}
+
+.shipping-counter input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #D9D9D9;
+  border-radius: 12px;
+}
+
+.shipping-counter input + input{
+    margin-top: 15px;
+}
+
+.shipping-counter input + input + input{
+    margin-top: 15px;
+}
+
+.shipping-counter-button {
+  color: white;
+  margin: 23px 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: 2px solid transparent;
+  background: #A5812F;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.shipping-counter-button:hover {
+  background: #D7C6A1;
+  color: black;
+  border-color: black;
+}
+
+.bottom-tickets {
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+}
+
+.tickets-design {
+  opacity: 0.5;
+  text-align: center;
+  width: 400px;
+  padding: 5px 20px;
+  background: white;
+  border-radius: 20px;
+}
+
+footer {
+  width: 100%;
+  padding: 50px;
+  color: #5F4234;
+  box-sizing: border-box;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.big-text{
+  font-weight: 450;
+}
+
+
+.small-text{
+  font-weight: lighter;
+}
+
+.bottom-text {
+  width: 100%;
+  background: #D4C693;
+  text-align: center;
+  padding: 5px 0;
+}
+
+@media (max-width: 1165px) {
+  .why-us {
+    padding: 20px 10px;
+  }
+
+  .why-us h1 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .why-us p {
+    font-size: 0.7rem;
+    margin: 10px 0 0 0;
+  }
+
+  .why-us1 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .why-us1 > img {
+    display: none;
+  }
+  
+  .img-lafet {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .info-block {
+    gap: 10px;
+  }
+
+  .info-block p {
+    font-size: 0.7rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .sell-card img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 1125px) {
+  .shipping-block1 img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 870px) {
+  .shipping-block1 img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 900px) {
+  .sell-card img {
+    height: 180px;
+  }
+}
+
+
+@media (max-width: 873px) {
+    .header {
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .burger-menu {
+    display: flex;
+    z-index: 101;
+  }
+
+  .header img {
+    height: 25px;
+    margin-right: auto;
+    margin: 0;
+  }
+
+  .header-actions {
+    position: fixed;
+    top: 0;
+    right: -65%;
+    width: 65%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .header-actions.is-open {
+    right: 0;
+  }
+
+  .spec {
+    margin: 5px 0;
+    width: 80%;
+  }
+}
+
+@media (max-width: 840px) {
+  footer {
+    padding: 20px 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .big-text {
+    font-size: 1rem;
+  }
+
+  .small-text {
+    font-size: 0.7rem;
+  }
+
+  .bottom-text {
+    padding: 5px 0;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 873px) {
+  .car-card1 {
+    padding: 0 0 20px 0;
+  }
+
+  .car-card1 p {
+    font-size: 0.7rem;
+    margin: 10px 0 0 0;
+  }
+
+  .car-card1 img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .car-gallery {
+    padding: 0;
+    margin: 0;
+  }
+
+  .car-card {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero-container h1 {
+    top: 50%;
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .hero-container h2 {
+    display: none;
+  }
+
+  .descr {
+    padding: 20px 10px 0 10px;
+  }
+
+  .descr h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .descr p {
+    margin: 10px 0;
+    font-size: 0.75rem;
+  }
+
+
+  .sell {
+    padding: 20px 10px;
+  }
+
+  .sell > h1 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .sell > p {
+    font-size: 0.7rem;
+  }
+
+  .sell-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sell-card > img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .sell-card1 {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .counter-style {
+    width: 60px;
+  }
+
+  .car-card-counter {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sell-card-text {
+    font-size: 0.7rem;
+  }
+
+  .sell-button {
+    width: 65%;
+  }
+
+
+
+  .shipping {
+    padding: 20px 10px;
+  }
+
+  .shipping-block1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .shippint-top-text {
+    font-size: 1rem;
+    margin: 0 0 10px 0;
+  }
+
+  .shippint-bottom-text {
+  font-size: 1rem;
+  }
+
+  .shipping-block1 img {
+    width: 90%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .shipping-counter {
+    min-width: 50px;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .shipping-counter h2 {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .shipping-counter p {
+    font-size: 0.7rem;
+    margin: 10px 0;
+  }
+
+  .shipping-counter input,
+  .shipping-counter button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .bottom-tickets {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tickets-design {
+    width: 90%;
+    padding: 10px 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
