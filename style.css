@@ -79,8 +79,11 @@ body {
   width: 100%;
 }
 
-.hero-container img {
+.hero-container video {
   width: 100%;
+  height: 100%;       /* Додаємо, щоб відео намагалося заповнити висоту */
+  max-height: 550px;  /* Ваше обмеження по висоті */
+  object-fit: cover;  /* Магія: обрізає зайве, не сплющуючи відео */
   display: block;
 }
 
@@ -125,11 +128,15 @@ body {
 }
 
 .car-card {
+  position: relative;
+  cursor: pointer;
   text-align: center;
   padding: 0 10px;
 }
 
 .car-card1 {
+  position: relative;
+  cursor: pointer;
   text-align: center;
   padding: 0 10px;
 }
@@ -148,14 +155,58 @@ body {
   border-radius: 12px;
 }
 
-.car-card1 video {
+.car-card1 img {
   width: 380px;
   object-fit: cover;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.car-card1:hover img {
+  filter: brightness(0.5);
 }
 
 .car-card img{
   width: 380px;
   object-fit: cover;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.car-card:hover img {
+  filter: brightness(0.5);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.overlay button {
+  border: 2px solid white;
+  padding: 10px 20px;
+  margin: 5px;
+  background: transparent;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.car-card:hover .overlay {
+  opacity: 1;
+}
+
+.car-card1:hover .overlay {
+  opacity: 1;
 }
 
 .car-card p {
